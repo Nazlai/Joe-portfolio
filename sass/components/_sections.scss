@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-color;
+}
+
+.navBar{
+    background-color: $main-color;
+    display: flex;  
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+    &__logo{
+        @include nav();
+        margin-left: 10px;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        @include nav();
+        margin-right: 10px;
+    }
+}
+
+.banner{
+    background: linear-gradient(rgba(63, 140, 33, 0.788),rgba(63, 140, 33, 0.747)),
+                url("../../assets/pattern__img/full-bloom/full-bloom.png"),
+                repeat;
+    color: $text-color;
+    padding: 60px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.projects{
+    margin: 10px 20px;
+}
+
+.project{
+    display: block;
+    margin: 10px auto;
+    @include media($breakpoint-tablet){
+        display: flex;
+    }
+    &__showcase{
+        @include media($breakpoint-tablet){
+            width: 50%;
+        }
+    }
+    &__info{
+        background-color: $secondary-color;
+        @include media($breakpoint-tablet){
+            width: 50%;
+        }
+    }
+}
+
+.showcase{
+    &__img{
+        max-width: 100%;
+    }
+}
+
+.aboutMe{
+    margin: 20px auto;
+    &__img{
+        max-width: 40%;
+        max-height: 40%;
+        border-radius: 100%;
+    }
+}

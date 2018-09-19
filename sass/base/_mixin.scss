@@ -1,0 +1,11 @@
+@mixin nav($color:$text-color){
+    outline: none;
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin media($breakpoint){
+    @media only screen and (min-width: $breakpoint){
+        @content;
+    }
+}

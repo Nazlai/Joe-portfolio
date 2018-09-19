@@ -5,93 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Joe Ho</title>
-  <link type="test/css" rel="stylesheet" href="sass/styles.css">
+  <link type="text/css" rel="stylesheet" href="sass/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 
   <nav class="navBar">
-    <p class="navBar__logo"><a href="#banner">Joe Ho</a></p>
-    <ul class="navBar__list">
-      <li class="navBar__item"><a href="#projects">Projects</a></li>
-      <li class="navBar__item"><a href="#about">About</a></li>
-      <li class="navBar__item"><a href="#contact">Contact</a></li>
-    </ul>
+      <p><a href="#banner"  class="navBar__logo">Joe Ho</a></p>
+      <ul class="navBar__list">
+        <li><a href="#projects"  class="navBar__item">Projects</a></li>
+        <li><a href="#about"  class="navBar__item">About</a></li>
+        <li><a href="#contact"  class="navBar__item">Contact</a></li>
+      </ul>
   </nav>
 
   <section class="banner" id="banner">
-    <h2 class="banner__title">Coding Projects</h2>
+    <h2 class="banner__title">Coding<br>Projects</h2>  
   </section>
 
   <main>
     <div class="projects" id="projects">
+      
+      <article class="project">
+          <section class="project__showcase">
+            <picture>
+              <a href="https://arcane-basin-42924.herokuapp.com/" class="showcase__link" target="_blank">
+                <img src="assets/project__img/random-quote-1280w.png" alt="Random Sociology Quotes" class="showcase__img">
+              </a>
+            </picture>
+          </section>
+          <section class="project__info">
+            <h3 class="info__title">Random Sociology Quotes</h3>
+            <p class="info__text"></p>
+            <p class="info__code">Project source codes</p>
+            <button class="info__btn info__btn--github">
+              <a href="https://github.com/Nazlai/freeCodeCamp-random-quote" target="_blank" class="info__link">
+                Github
+              </a>
+            </button>
+            <button class="info__btn info__btn--codepen">
+              <a href="https://codepen.io/Nazlai/pen/JZXQwV" target="_blank" class="info__link">
+                Codepen
+              </a>
+            </button>
+          </section>
+        </article>    
 
       <article class="project">
         <section class="project__showcase">
           <picture>
-            <a href="https://glacial-wave-15311.herokuapp.com/" class="showcase__link"><img src="assets/project__img/twitch-stream-viewer.png" alt="Twitch Stream Viewer App" class="showcase__img"></a>
+            <a href="https://glacial-wave-15311.herokuapp.com/" class="showcase__link" target="_blank">
+              <img src="assets/project__img/twitch-stream-viewer-1280w.png" alt="Twitch Stream Viewer App" class="showcase__img">
+            </a>
           </picture>
         </section>
         <section class="project__info">
           <h3 class="info__title">Twitch Stream Viewer</h3>
           <p class="info__text"></p>
           <p class="info__code">Project source codes</p>
-          <button class="info__btn info__btn--github"><a href="https://github.com/Nazlai/freeCodeCamp-twitch-viewer" target="_blank" class="info__link"></a></button>
-          <button class="info__btn info__btn--codepen"><a href="https://codepen.io/Nazlai/pen/VGBRQJ" target="_blank" class="info__link"></a></button>
+          <button class="info__btn info__btn--github">
+            <a href="https://github.com/Nazlai/freeCodeCamp-twitch-viewer" target="_blank" class="info__link">
+              Github
+            </a>
+          </button>
+          <button class="info__btn info__btn--codepen">
+            <a href="https://codepen.io/Nazlai/pen/VGBRQJ" target="_blank" class="info__link">
+              Codepen
+            </a>
+          </button>
         </section>
       </article>
 
       <article class="project">
           <section class="project__showcase">
             <picture>
-              <a href="https://stormy-meadow-49208.herokuapp.com/index.html" class="showcase__link"><img src="assets/project__img/weather-app.png" alt="Weather App" class="showcase__img"></a>
+              <a href="https://stormy-meadow-49208.herokuapp.com/index.html" class="showcase__link" target="_blank">
+                <img src="assets/project__img/weather-app-1280w.png" alt="Weather App" class="showcase__img">
+              </a>
             </picture>
           </section>
           <section class="project__info">
             <h3 class="info__title">A Weather App</h3>
             <p class="info__text"></p>
             <p class="info__code">Project source codes</p>
-            <button class="info__btn info__btn--github"><a href="https://github.com/Nazlai/freeCodeCamp-weather-app" target="_blank" class="info__link"></a></button>
-            <button class="info__btn info__btn--codepen"><a href="https://codepen.io/Nazlai/pen/dKwJKY" target="_blank" class="info__link"></a></button>
+            <button class="info__btn info__btn--github">
+              <a href="https://github.com/Nazlai/freeCodeCamp-weather-app" target="_blank" class="info__link">
+                Github
+              </a>
+            </button>
+            <button class="info__btn info__btn--codepen">
+              <a href="https://codepen.io/Nazlai/pen/dKwJKY" target="_blank" class="info__link">
+                Codepen
+              </a>
+            </button>
           </section>
         </article>
 
         <article class="project">
             <section class="project__showcase">
               <picture>
-                <a href="https://arcane-basin-42924.herokuapp.com/" class="showcase__link"><img src="assets/project__img/random-quote.png" alt="Random Sociology Quotes" class="showcase__img"></a>
+                <a href="https://blooming-everglades-77939.herokuapp.com/index.html" class="showcase__link" target="_blank">
+                  <img src="assets/project__img/pomodoro-clock-1280w.png" alt="Pomodoro Clock" class="showcase__img">
+                </a>
               </picture>
             </section>
             <section class="project__info">
-              <h3 class="info__title">Random Sociology Quotes</h3>
+              <h3 class="info__title">A Pomodoro Clock</h3>
               <p class="info__text"></p>
               <p class="info__code">Project source codes</p>
-              <button class="info__btn info__btn--github"><a href="https://github.com/Nazlai/freeCodeCamp-random-quote" target="_blank" class="info__link"></a></button>
-              <button class="info__btn info__btn--codepen"><a href="https://codepen.io/Nazlai/pen/JZXQwV" target="_blank" class="info__link"></a></button>
+              <button class="info__btn info__btn--github">
+                <a href="https://github.com/Nazlai/freeCodeCamp-Pomodoro-Clock" target="_blank" class="info__link">
+                  Github
+                </a>
+              </button>
+              <button class="info__btn info__btn--codepen">
+                <a href="https://codepen.io/Nazlai/pen/YOObOe" target="_blank" class="info__link">
+                  Codepen
+                </a>
+              </button>
             </section>
           </article>
-
-          <article class="project">
-              <section class="project__showcase">
-                <picture>
-                  <a href="https://blooming-everglades-77939.herokuapp.com/index.html" class="showcase__link"><img src="assets/project__img/pomodoro-clock.png" alt="Pomodoro Clock" class="showcase__img"></a>
-                </picture>
-              </section>
-              <section class="project__info">
-                <h3 class="info__title">A Pomodoro Clock</h3>
-                <p class="info__text"></p>
-                <p class="info__code">Project source codes</p>
-                <button class="info__btn info__btn--github"><a href="https://github.com/Nazlai/freeCodeCamp-Pomodoro-Clock" target="_blank" class="info__link"></a></button>
-                <button class="info__btn info__btn--codepen"><a href="https://codepen.io/Nazlai/pen/YOObOe" target="_blank" class="info__link"></a></button>
-              </section>
-            </article>
     </div>
 
     <article class="aboutMe" id="about">
       <img src="assets/about-me__img/Joe__img--tinified.JPG" alt="Joe Ho" class="aboutMe__img">
       <p class="aboutMe__text"></p>
-      <a href="https://github.com/Nazlai" class="aboutMe__link"><i class="fab fa-github"></i></a>
-      <a href="https://codepen.io/Nazlai/" class="aboutMe__link"><i class="fab fa-codepen"></i></a>
+      <a href="https://github.com/Nazlai" class="aboutMe__link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://codepen.io/Nazlai/" class="aboutMe__link">
+        <i class="fab fa-codepen"></i>
+      </a>
     </article>
 
     <article class="contact" id="contact">
@@ -105,6 +149,6 @@
   <footer class="footer">
     <p class="footer__text">Coded by Joe Ho</p>
   </footer>
-  <script></script>
+  <script src="src/script.js"></script>
 </body>
 </html>
