@@ -1,5 +1,4 @@
 @mixin nav($color:$text-color){
-    outline: none;
     text-decoration: none;
     color: $color;
 }

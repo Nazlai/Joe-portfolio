@@ -1,30 +1,30 @@
-body{
+body {
     text-align: center;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: $text-color;
 }
 
-.navBar{
+.navBar {
     background-color: $main-color;
     display: flex;  
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px 0;
-    &__logo{
+    &__logo {
         @include nav();
         margin-left: 10px;
     }
-    &__list{
+    &__list {
         display: flex;
     }
-    &__item{
+    &__item {
         @include nav();
         margin-right: 10px;
     }
 }
 
-.banner{
+.banner {
     background: linear-gradient(rgba(63, 140, 33, 0.788),rgba(63, 140, 33, 0.747)),
                 url("../../assets/pattern__img/full-bloom/full-bloom.png"),
                 repeat;
@@ -34,46 +34,81 @@ body{
     font-size: 3rem;
 }
 
-.projects{
+.projects {
     margin: 20px 0;
-    @include media($breakpoint-tablet){
+    @include media($breakpoint-desktop) {
         margin-left: 20px;
         margin-right: 20px;
     }
 }
 
-.project{
+.project {
     display: block;
     margin: 20px auto;
-    @include media($breakpoint-tablet){
+    @include media($breakpoint-desktop) {
         display: flex;
     }
-    &__showcase{
-        @include media($breakpoint-tablet){
+    &__showcase {
+        @include media($breakpoint-desktop) {
             width: 50%;
         }
     }
-    &__info{
+    &__info {
         background-color: $secondary-color;
         padding: 30px 20px;
-        @include media($breakpoint-tablet){
+        @include media($breakpoint-desktop) {
             width: 50%;
         }
     }
 }
 
-.showcase{
-    &__img{
+.showcase {
+    &__img {
         max-width: 100%;
         vertical-align: bottom;
     }
 }
 
-.aboutMe{
+.info {
+    &__title {
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    &__link {
+        color: $text-color;
+        text-decoration: none;
+    }
+    &__btn {
+        color: $text-color;
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px 10px 0;
+        padding: 10px 20px;
+        border: 1px solid $text-color;
+        border-radius: 3px;
+        &:hover {
+            color: $secondary-color;
+            background-color: $text-color;
+        }
+    }
+}
+
+.aboutMe {
     margin: 20px auto;
-    &__img{
-        max-width: 40%;
-        max-height: 40%;
+    &__img {
+        height: 160px;
+        width: 160px;
         border-radius: 100%;
     }
+}
+
+.contact {
+    background-color: $main-color; 
+    font-size: 1.5em;
+    padding: 40px;
+}
+
+.footer {
+    background-color: $main-color;
+    padding: 20px;
 }
