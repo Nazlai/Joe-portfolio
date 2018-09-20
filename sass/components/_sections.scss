@@ -35,12 +35,16 @@ body{
 }
 
 .projects{
-    margin: 10px 20px;
+    margin: 20px 0;
+    @include media($breakpoint-tablet){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .project{
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     @include media($breakpoint-tablet){
         display: flex;
     }
@@ -51,6 +55,7 @@ body{
     }
     &__info{
         background-color: $secondary-color;
+        padding: 30px 20px;
         @include media($breakpoint-tablet){
             width: 50%;
         }
@@ -60,6 +65,7 @@ body{
 .showcase{
     &__img{
         max-width: 100%;
+        vertical-align: bottom;
     }
 }
 
