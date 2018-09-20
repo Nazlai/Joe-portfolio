@@ -1,0 +1,9 @@
+.banner {
+    background: linear-gradient(rgba(63, 140, 33, 0.788),rgba(63, 140, 33, 0.747)),
+                url("../../assets/pattern__img/full-bloom/full-bloom.png"),
+                repeat;
+    color: $text-color;
+    padding: 60px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
