@@ -113,10 +113,14 @@ body {
 .project {
   display: block;
 }
+@media only screen and (min-width: 500px) {
+  .project {
+    margin: 20px;
+  }
+}
 @media only screen and (min-width: 990px) {
   .project {
     display: flex;
-    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 990px) {
@@ -145,7 +149,7 @@ body {
 .info__text {
   font-size: 1em;
   text-align: left;
-  padding: 1.2em;
+  padding: 1em;
   line-height: 1.5;
 }
 .info__link {
@@ -159,7 +163,7 @@ body {
   color: #dfdfdf;
   text-decoration: none;
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
   padding: 10px 20px;
   border: 1px solid #dfdfdf;
   border-radius: 3px;
@@ -185,7 +189,7 @@ body {
   padding: 0.5em 0;
   font-size: 2em;
 }
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 500px) {
   .contact__text {
     font-size: 1.5em;
   }
@@ -194,7 +198,7 @@ body {
   font-size: 2em;
   padding-top: 20px;
 }
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 500px) {
   .contact__links {
     font-size: 3em;
   }

@@ -6,9 +6,11 @@
 
 .project {
     display: block;
+    @include media($breakpoint-tablet){
+        margin: 20px;
+    }
     @include media($breakpoint-desktop) {
         display: flex;
-        margin-bottom: 20px;
     }
     &__showcase {
         @include media($breakpoint-desktop) {
@@ -38,7 +40,7 @@
     &__text{
         font-size: 1em;
         text-align: left;
-        padding: 1.2em;
+        padding: 1em;
         line-height: 1.5;
     }
     &__link {
@@ -48,7 +50,7 @@
         color: $text-color;
         text-decoration: none;
         display: inline-block;
-        margin: 10px;
+        margin: 0 10px;
         padding: 10px 20px;
         border: 1px solid $text-color;
         border-radius: 3px;
