@@ -4,5 +4,12 @@
         height: 170px;
         width: 170px;
         border-radius: 100%;
+        margin: 1em;
+    }
+    &__text{
+        padding: 0 1em;
+        color: #242424;
+        font-size: 1.5em;
+        line-height: 1.2;
     }
 }
