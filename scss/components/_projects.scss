@@ -18,7 +18,7 @@
         }
     }
     &__info {
-        background-color: $secondary-color;
+        background-color: $main-color;
         padding: 30px 20px;
         @include media($breakpoint-desktop) {
             width: 50%;
@@ -39,8 +39,7 @@
         padding-bottom: 20px;
     }
     &__link {
-        color: $text-color;
-        text-decoration: none;
+        @include linkHover();
     }
     &__btn {
         color: $text-color;

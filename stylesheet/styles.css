@@ -70,19 +70,27 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   padding: 20px 0;
+  line-height: 20px;
 }
 .navBar__logo {
-  text-decoration: none;
   color: #dfdfdf;
-  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+.navBar__logo:hover {
+  color: #b9b935;
 }
 .navBar__list {
   display: flex;
 }
 .navBar__item {
-  text-decoration: none;
   color: #dfdfdf;
+  text-decoration: none;
   margin-right: 10px;
+}
+.navBar__item:hover {
+  color: #b9b935;
 }
 
 .banner {
@@ -118,7 +126,7 @@ body {
   }
 }
 .project__info {
-  background-color: #3f8c21;
+  background-color: #218c51;
   padding: 30px 20px;
 }
 @media only screen and (min-width: 840px) {
@@ -139,6 +147,9 @@ body {
 .info__link {
   color: #dfdfdf;
   text-decoration: none;
+}
+.info__link:hover {
+  color: #b9b935;
 }
 .info__btn {
   color: #dfdfdf;
@@ -165,8 +176,43 @@ body {
 
 .contact {
   background-color: #218c51;
-  font-size: 1.5em;
-  padding: 40px;
+}
+.contact__title {
+  padding: 20px 0;
+  font-size: 2em;
+}
+.contact__text {
+  line-height: 20px;
+}
+@media only screen and (min-width: 840px) {
+  .contact__text {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+}
+.contact__links {
+  padding-top: 20px;
+}
+@media only screen and (min-width: 840px) {
+  .contact__links {
+    font-size: 2em;
+  }
+}
+.contact__link {
+  font-size: 2em;
+  padding: 0 10px;
+  color: #dfdfdf;
+  text-decoration: none;
+}
+.contact__link:hover {
+  color: #b9b935;
+}
+.contact__mail {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+.contact__mail:hover {
+  color: #b9b935;
 }
 
 .footer {

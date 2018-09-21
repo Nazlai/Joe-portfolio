@@ -1,5 +1,28 @@
 .contact {
     background-color: $main-color; 
-    font-size: 1.5em;
-    padding: 40px;
+    &__title {
+        padding: 20px 0;
+        font-size: 2em;
+    }
+    &__text {
+        line-height: 20px;
+        @include media($breakpoint-desktop){
+            font-size: 1.5em;
+            line-height: 30px;
+        }
+    }
+    &__links {
+        padding-top: 20px;
+        @include media($breakpoint-desktop){
+            font-size: 2em;
+        }
+    }
+    &__link {
+        font-size: 2em;
+        padding: 0 10px;
+        @include linkHover();
+    }
+    &__mail {
+        @include linkHover();
+    }
 }

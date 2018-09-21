@@ -1,10 +1,14 @@
-@mixin nav($color:$text-color){
-    text-decoration: none;
-    color: $color;
-}
 
 @mixin media($breakpoint){
     @media only screen and (min-width: $breakpoint){
         @content;
+    }
+}
+
+@mixin linkHover($text-color:$text-color,$text-decoration:none,$hover-color:$hover-color){
+    color: $text-color;
+    text-decoration: $text-decoration;
+    &:hover{
+        color:$hover-color;
     }
 }

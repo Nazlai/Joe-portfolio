@@ -4,15 +4,17 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px 0;
+    line-height: 20px;
     &__logo {
-        @include nav();
-        margin-left: 10px;
+        @include linkHover();
+        font-size: 1.5em;
+        margin-left: 15px;
     }
     &__list {
         display: flex;
     }
     &__item {
-        @include nav();
+        @include linkHover();
         margin-right: 10px;
     }
 }
