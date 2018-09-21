@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px 0;
-    line-height: 20px;
     &__logo {
         @include linkHover();
         font-size: 1.5em;

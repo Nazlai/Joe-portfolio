@@ -1,31 +1,26 @@
 .contact {
     background-color: $main-color; 
     &__title {
-        padding: 20px 0;
+        padding: 0.5em 0;
         font-size: 2em;
     }
     &__text {
-        line-height: 20px;
-        @include media($breakpoint-desktop){
+        @include media($breakpoint-tablet){
             font-size: 1.5em;
-            line-height: 30px;
         }
     }
     &__links {
+        font-size: 2em;
         padding-top: 20px;
-        @include media($breakpoint-desktop){
-            font-size: 2em;
+        @include media($breakpoint-tablet){
+            font-size: 3em;
         }
     }
     &__mail {
         @include linkHover();
     }
     &__link {
-        font-size: 2em;
-        padding: 0 10px;
+        padding: 0 0.5em;
         @include linkHover();
-        @include media($breakpoint-desktop){
-            padding: 0 20px;
-        }
     }
 }

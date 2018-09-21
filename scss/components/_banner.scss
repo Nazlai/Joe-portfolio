@@ -3,7 +3,9 @@
                 url("../../assets/pattern__img/full-bloom/full-bloom.png"),
                 repeat;
     color: $text-color;
-    padding: 60px;
-    margin-bottom: 20px;
-    font-size: 3rem;
+    padding: 1.5em;
+    font-size: 3em;
+    &__title{
+        line-height: 1.2;
+    }
 }

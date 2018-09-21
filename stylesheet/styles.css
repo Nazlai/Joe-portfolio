@@ -60,6 +60,7 @@ table {
 body {
   text-align: center;
   font-size: 1em;
+  line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   color: #dfdfdf;
   background-color: #f0f0f0;
@@ -71,7 +72,6 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   padding: 20px 0;
-  line-height: 20px;
 }
 .navBar__logo {
   color: #dfdfdf;
@@ -97,40 +97,38 @@ body {
 .banner {
   background: linear-gradient(rgba(63, 140, 33, 0.788), rgba(63, 140, 33, 0.747)), url("../../assets/pattern__img/full-bloom/full-bloom.png"), repeat;
   color: #dfdfdf;
-  padding: 60px;
-  margin-bottom: 20px;
-  font-size: 3rem;
+  padding: 1.5em;
+  font-size: 3em;
+}
+.banner__title {
+  line-height: 1.2;
 }
 
-.projects {
-  margin: 20px 0;
-}
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 990px) {
   .projects {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
   }
 }
 
 .project {
   display: block;
-  margin: 20px auto;
 }
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 990px) {
   .project {
     display: flex;
+    margin-bottom: 20px;
   }
 }
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 990px) {
   .project__showcase {
     width: 50%;
   }
 }
 .project__info {
+  padding: 1em;
   background-color: #218c51;
-  padding: 30px 20px;
 }
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 990px) {
   .project__info {
     width: 50%;
   }
@@ -143,7 +141,12 @@ body {
 
 .info__title {
   font-size: 1.5em;
-  padding-bottom: 20px;
+}
+.info__text {
+  font-size: 1em;
+  text-align: left;
+  padding: 1.2em;
+  line-height: 1.5;
 }
 .info__link {
   color: #dfdfdf;
@@ -156,7 +159,7 @@ body {
   color: #dfdfdf;
   text-decoration: none;
   display: inline-block;
-  margin: 20px 10px 0;
+  margin: 10px;
   padding: 10px 20px;
   border: 1px solid #dfdfdf;
   border-radius: 3px;
@@ -179,24 +182,21 @@ body {
   background-color: #218c51;
 }
 .contact__title {
-  padding: 20px 0;
+  padding: 0.5em 0;
   font-size: 2em;
 }
-.contact__text {
-  line-height: 20px;
-}
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 740px) {
   .contact__text {
     font-size: 1.5em;
-    line-height: 30px;
   }
 }
 .contact__links {
+  font-size: 2em;
   padding-top: 20px;
 }
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 740px) {
   .contact__links {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 .contact__mail {
@@ -207,18 +207,12 @@ body {
   color: #b9b935;
 }
 .contact__link {
-  font-size: 2em;
-  padding: 0 10px;
+  padding: 0 0.5em;
   color: #dfdfdf;
   text-decoration: none;
 }
 .contact__link:hover {
   color: #b9b935;
-}
-@media only screen and (min-width: 840px) {
-  .contact__link {
-    padding: 0 20px;
-  }
 }
 
 .footer {
