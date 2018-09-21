@@ -17,12 +17,15 @@
             font-size: 2em;
         }
     }
+    &__mail {
+        @include linkHover();
+    }
     &__link {
         font-size: 2em;
         padding: 0 10px;
         @include linkHover();
-    }
-    &__mail {
-        @include linkHover();
+        @include media($breakpoint-desktop){
+            padding: 0 20px;
+        }
     }
 }

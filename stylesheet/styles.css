@@ -62,6 +62,7 @@ body {
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   color: #dfdfdf;
+  background-color: #f0f0f0;
 }
 
 .navBar {
@@ -169,8 +170,8 @@ body {
   margin: 20px auto;
 }
 .aboutMe__img {
-  height: 160px;
-  width: 160px;
+  height: 170px;
+  width: 170px;
   border-radius: 100%;
 }
 
@@ -198,6 +199,13 @@ body {
     font-size: 2em;
   }
 }
+.contact__mail {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+.contact__mail:hover {
+  color: #b9b935;
+}
 .contact__link {
   font-size: 2em;
   padding: 0 10px;
@@ -207,12 +215,10 @@ body {
 .contact__link:hover {
   color: #b9b935;
 }
-.contact__mail {
-  color: #dfdfdf;
-  text-decoration: none;
-}
-.contact__mail:hover {
-  color: #b9b935;
+@media only screen and (min-width: 840px) {
+  .contact__link {
+    padding: 0 20px;
+  }
 }
 
 .footer {
