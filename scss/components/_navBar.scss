@@ -2,18 +2,91 @@
     background-color: $main-color;
     display: flex;  
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px 0;
+    align-items: baseline;
+    line-height: 1.5;
+    padding: 10px 0;
+    height: 56px;
     &__logo {
         @include linkHover();
         font-size: 1.5em;
+        padding: 10px 0;
         margin-left: 15px;
     }
     &__list {
         display: flex;
+        @media only screen and (max-width:$breakpoint-large-mobile) {
+            display: none;
+            &--active{
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 56px;
+                background-color: $main-color;
+                text-align: left;
+                padding: 10px 15px;
+            }
+        }
     }
     &__item {
         @include linkHover();
-        margin-right: 10px;
+        padding: 10px;
+        @media only screen and (max-width:$breakpoint-large-mobile){
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 0;
+            padding-right: 100%;
+        }
+    }
+    &__mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 56px;
+        width: 56px;  
+        @include media($breakpoint-large-mobile){
+            display: none;
+        }
+    }
+    &__hamburger {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        padding: 14px 18px;
+    }
+}
+
+.hamburger__toggle {
+    &,
+    &::before,
+    &::after {
+        display: block;
+        content: "";
+        width: 36px;
+        height: 5px;
+        position: absolute;
+        background-color: $text-color;
+        border-radius: 3px;
+        @include transition(all, 300ms, ease-in-out);
+    }
+    right: 0;
+    top: 11px;
+    &::before{
+        top: -11px;
+    }
+    &:after{
+        bottom: -11px;
+    }
+    &--active{
+        background-color: transparent;
+        &::before,
+        &::after {
+            top: 0;
+        }
+        &::before{
+            transform: rotate(45deg);
+        }
+        &::after{
+            transform: rotate(135deg);
+        }
     }
 }
