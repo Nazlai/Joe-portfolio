@@ -5,7 +5,7 @@
     }
 }
 
-@mixin linkHover($text-color:$text-color,$text-decoration:none,$hover-color:$hover-color){
+@mixin linkHover($text-color:$text-color,$text-decoration:none,$hover-color:$main-color){
     color: $text-color;
     text-decoration: $text-decoration;
     &:hover{

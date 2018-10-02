@@ -2,8 +2,9 @@
     background: linear-gradient(rgba(63, 140, 33, 0.788),rgba(63, 140, 33, 0.747)),
                 url("../../assets/pattern__img/full-bloom/full-bloom.png"),
                 repeat;
-    color: $text-color;
+    color: $secondary-text-color;
     padding: 1.5em 1em;
+    padding-top: 56px + 72px;
     font-size: 3em;
     &__title{
         line-height: 1.2;

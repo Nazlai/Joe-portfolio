@@ -1,5 +1,6 @@
 .aboutMe {
     margin: 28px auto;
+    max-width: 33rem;
     &__img {
         height: 170px;
         width: 170px;
@@ -8,7 +9,6 @@
     }
     &__text{
         padding: 0 1em;
-        color: $secondary-text-color;
         font-size: 1.5em;
         line-height: 1.2;
     }

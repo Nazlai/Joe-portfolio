@@ -7,8 +7,12 @@
     padding: 10px 0;
     height: 56px;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     &__logo {
-        @include linkHover();
+        @include linkHover($secondary-text-color, none, $hover-color);
         font-size: 1.5em;
         padding: 10px 0;
         margin-left: 15px;
@@ -29,7 +33,7 @@
         }
     }
     &__item {
-        @include linkHover();
+        @include linkHover($secondary-text-color, none, $hover-color);
         padding: 10px;
         @media only screen and (max-width:$breakpoint-large-mobile){
             display: inline-block;

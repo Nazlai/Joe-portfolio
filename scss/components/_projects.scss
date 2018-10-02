@@ -19,7 +19,7 @@
     }
     &__info {
         padding: 1em;
-        background-color: $main-color;
+        color: $text-color;
         @include media($breakpoint-desktop) {
             width: 50%;
         }
@@ -56,7 +56,7 @@
         border: 1px solid $text-color;
         border-radius: 3px;
         &:hover {
-            color: $secondary-color;
+            color: $background-color;
             background-color: $text-color;
         }
     }
