@@ -64,8 +64,12 @@ body {
   background-color: #faf8f2;
 }
 
+* {
+  outline-color: #827373;
+}
+
 .navBar {
-  background-color: #218c51;
+  background-color: #827373;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -86,7 +90,7 @@ body {
   margin-left: 15px;
 }
 .navBar__logo:hover {
-  color: #b9b935;
+  color: #7ca89d;
 }
 .navBar__list {
   display: flex;
@@ -100,7 +104,7 @@ body {
     position: absolute;
     width: 100%;
     top: 56px;
-    background-color: #218c51;
+    background-color: #827373;
     text-align: left;
     padding: 10px 15px;
   }
@@ -111,7 +115,7 @@ body {
   padding: 10px;
 }
 .navBar__item:hover {
-  color: #b9b935;
+  color: #7ca89d;
 }
 @media only screen and (max-width: 360px) {
   .navBar__item {
@@ -150,7 +154,7 @@ body {
   width: 36px;
   height: 5px;
   position: absolute;
-  background-color: #2c2a2a;
+  background-color: #faf8f2;
   border-radius: 3px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -177,8 +181,9 @@ body {
 }
 
 .banner {
-  background: linear-gradient(rgba(63, 140, 33, 0.788), rgba(63, 140, 33, 0.747)), url("../../assets/pattern__img/full-bloom/full-bloom.png"), repeat;
-  color: #dfdfdf;
+  background: linear-gradient(rgba(231, 231, 231, 0.7), rgba(231, 231, 231, 0.7)), url("../../assets/pattern__img/full-bloom/full-bloom.png"), repeat;
+  background: #faf8f2;
+  color: #827373;
   padding: 1.5em 1em;
   padding-top: 128px;
   font-size: 3em;
@@ -244,20 +249,20 @@ body {
   text-decoration: none;
 }
 .info__link:hover {
-  color: #218c51;
+  color: #827373;
 }
 .info__btn {
-  color: #2c2a2a;
+  color: #faf8f2;
+  background-color: #524949;
   text-decoration: none;
   display: inline-block;
   margin: 0 10px;
   padding: 10px 20px;
-  border: 1px solid #2c2a2a;
+  border: 1px solid transparent;
   border-radius: 3px;
 }
-.info__btn:hover {
-  color: #faf8f2;
-  background-color: #2c2a2a;
+.info__btn:active {
+  background-color: #373131;
 }
 
 .aboutMe {
@@ -303,7 +308,7 @@ body {
   text-decoration: none;
 }
 .contact__mail:hover {
-  color: #218c51;
+  color: #827373;
 }
 .contact__link {
   padding: 0 0.5em;
@@ -311,11 +316,11 @@ body {
   text-decoration: none;
 }
 .contact__link:hover {
-  color: #218c51;
+  color: #827373;
 }
 
 .footer {
-  background-color: #218c51;
+  background-color: #827373;
   padding: 20px;
   color: #dfdfdf;
 }

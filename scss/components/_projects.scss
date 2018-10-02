@@ -51,16 +51,16 @@
         @include linkHover();
     }
     &__btn {
-        color: $text-color;
+        color: $background-color;
+        background-color: $button-color;
         text-decoration: none;
         display: inline-block;
         margin: 0 10px;
         padding: 10px 20px;
-        border: 1px solid $text-color;
+        border: 1px solid transparent;
         border-radius: 3px;
-        &:hover {
-            color: $background-color;
-            background-color: $text-color;
+        &:active {
+            background-color: darken($color: $button-color, $amount: 10%);
         }
     }
 }

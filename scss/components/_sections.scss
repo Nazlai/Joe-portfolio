@@ -4,3 +4,7 @@ body {
     color: $text-color;
     background-color: $background-color;
 }
+
+* {
+    outline-color: $main-color;
+}
