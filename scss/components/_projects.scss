@@ -7,7 +7,7 @@
 .project {
     display: block;
     @include media($breakpoint-tablet){
-        margin: 20px;
+        margin: 28px 20px 0;
     }
     @include media($breakpoint-desktop) {
         display: flex;
@@ -19,6 +19,9 @@
     }
     &__info {
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         color: $text-color;
         @include media($breakpoint-desktop) {
             width: 50%;
