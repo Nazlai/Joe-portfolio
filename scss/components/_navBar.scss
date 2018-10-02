@@ -6,6 +6,7 @@
     line-height: 1.5;
     padding: 10px 0;
     height: 56px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     &__logo {
         @include linkHover();
         font-size: 1.5em;
