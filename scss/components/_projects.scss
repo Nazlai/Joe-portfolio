@@ -23,6 +23,7 @@
         flex-direction: column;
         justify-content: space-between;
         color: $text-color;
+        background-color: $background-color;
         @include media($breakpoint-desktop) {
             width: 50%;
         }

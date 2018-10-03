@@ -1,13 +1,10 @@
 .banner {
-    /*background: linear-gradient(rgba(231, 231, 231, 0.700),rgba(231, 231, 231, 0.700)),
+    background: linear-gradient(rgba(130, 115, 115, 0.700),rgba(130, 115, 115, 0.700)),
                 url("../../assets/pattern__img/full-bloom/full-bloom.png"),
-                repeat;*/
-    background: $background-color;
+                repeat;
+    //background: $background-color;
     color: $main-color;
     padding: 1.5em 1em;
     padding-top: 56px + 72px;
     font-size: 3em;
-    &__title{
-        line-height: 1.2;
-    }
 }

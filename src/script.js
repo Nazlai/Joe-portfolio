@@ -1,22 +1,22 @@
 
 "use strict";
 
-const Module = (function(){
-  const hamburgerToggle = function(){
-    const toggle = document.getElementById("hamburger-toggle");
-    const navList = document.getElementById("navBar-list");
-    toggle.classList.toggle("hamburger__toggle--active");
-    navList.classList.toggle("navBar__list--active");
+(function(){
+
+  const navToggle = function(event){
+    const navList = document.getElementById("js-list");
+    const toggle = document.getElementById("js-toggle");
+
+    if (event.target.closest('#js-hamburger')){
+      navList.classList.toggle("navBar__list--active");
+      toggle.classList.toggle("hamburger__toggle--active");
+    }
+
+    if (event.target.matches(".navBar__item")){
+      navList.classList.remove("navBar__list--active");
+      toggle.classList.remove("hamburger__toggle--active");
+    }
   }
 
-  const hamburger = document.getElementById("hamburger");
-  
-  hamburger.addEventListener("click", hamburgerToggle);
-  
-  const navItem = document.querySelectorAll(".navBar__item");
-
-  for (let i = 0; i < navItem.length; i++){
-    navItem[i].addEventListener("click", hamburgerToggle);
-  } 
-
-})()
+  document.addEventListener("click", navToggle);
+})();
