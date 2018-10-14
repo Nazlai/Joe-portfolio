@@ -267,6 +267,10 @@ body {
   padding-top: 56px;
   max-width: 33rem;
 }
+.aboutMe__title {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
 .aboutMe__img {
   height: 170px;
   width: 170px;
@@ -274,7 +278,8 @@ body {
   margin: 1em;
 }
 .aboutMe__text {
-  padding: 0 1em;
+  text-align: left;
+  padding: 0 1.5em;
   font-size: 1.5em;
   line-height: 1.2;
 }

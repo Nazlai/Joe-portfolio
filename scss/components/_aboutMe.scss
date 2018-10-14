@@ -2,6 +2,10 @@
     margin: 0 auto;
     padding-top: 56px;
     max-width: 33rem;
+    &__title {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
     &__img {
         height: 170px;
         width: 170px;
@@ -9,7 +13,8 @@
         margin: 1em;
     }
     &__text{
-        padding: 0 1em;
+        text-align: left;
+        padding: 0 1.5em;
         font-size: 1.5em;
         line-height: 1.2;
     }
